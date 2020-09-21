@@ -34,6 +34,10 @@ public class SfgDiApplication {
 		System.out.println("-------- Constructor" );
 		ConstructorInjectedController constructorInjectedController = (ConstructorInjectedController) ctx.getBean("constructorInjectedController");
 		System.out.println(constructorInjectedController.getGreeting());
+
+		System.out.println("--------- Pet Dog");
+		PetController pet = (PetController) ctx.getBean("petController");
+		System.out.println(pet.whichPetIsTheBest());
 	}
 
 }
